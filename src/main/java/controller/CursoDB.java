@@ -1,16 +1,19 @@
+package controller;
+
 import java.sql.*;
 import java.util.ArrayList;
 
-public class UserDB extends Database {
+import model.Curso;
+
+public class CursoDB extends Database {
     private boolean check = false;
 
-    public boolean insertUser(User user) {
+    public boolean insertCurso(Curso curso) {
         connect();
-        String sql = "INSERT INTO Usuario (nome, cpf) VALUES (?, ?);";
+        String sql = "INSERT INTO Curso (nome) VALUES (?);";
         try {
             pst = connection.prepareStatement(sql);
-            pst.setString(1, user.getNome());
-            pst.setString(2, user.getCpf());
+            pst.setString(1, curso.getNome());
             pst.execute();
             check = true;
         } catch (SQLException error) {
@@ -26,21 +29,20 @@ public class UserDB extends Database {
         return check;
     }
 
-    public ArrayList<User> selectUser() {
+    public ArrayList<Curso> selectCurso() {
         connect();
-        ArrayList<User> users = new ArrayList<>();
-        String sql = "SELECT * FROM Usuario;";
+        ArrayList<Curso> cursos = new ArrayList<>();
+        String sql = "SELECT * FROM Curso;";
         try {
             statement = connection.createStatement();
             result = statement.executeQuery(sql);
             while (result.next()) {
-                User user = new User(result.getString("nome"), result.getString("cpf"));
-                user.setId(result.getInt("id"));
+                Curso curso = new Curso(result.getString("nome"));
+                curso.setId(result.getInt("id"));
                 System.out.println("id = " + result.getInt("id"));
                 System.out.println("nome = " + result.getString("nome"));
-                System.out.println("cpf = " + result.getString("cpf"));
                 System.out.println("--------------------");
-                users.add(user);
+                cursos.add(curso);
             }
         } catch (SQLException error) {
             System.out.println("Operation Error: " + error.getMessage());
@@ -53,12 +55,12 @@ public class UserDB extends Database {
                 System.out.println("Connection Closure Error: " + error.getMessage());
             }
         }
-        return users;
+        return cursos;
     }
 
-    public boolean updateUser(int id, String nome) {
+    public boolean updateCurso(int id, String nome) {
         connect();
-        String sql = "UPDATE Usuario SET nome = ? WHERE id = ?;";
+        String sql = "UPDATE Curso SET nome = ? WHERE id = ?;";
         try {
             pst = connection.prepareStatement(sql);
             pst.setString(1, nome);
@@ -78,9 +80,9 @@ public class UserDB extends Database {
         return check;
     }
 
-    public boolean deleteUser(int id) {
+    public boolean deleteCurso(int id) {
         connect();
-        String sql = "DELETE FROM Usuario WHERE id = ?;";
+        String sql = "DELETE FROM Curso WHERE id = ?;";
         try {
             pst = connection.prepareStatement(sql);
             pst.setInt(1, id);

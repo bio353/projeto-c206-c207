@@ -1,11 +1,11 @@
-public class User {
+package model;
+
+public class Curso {
     private String nome;
-    private String cpf;
     private int id;
 
-    public User(String nome, String cpf) {
+    public Curso(String nome) {
         this.nome = nome;
-        this.cpf = cpf;
     }
 
     public String getNome() {
@@ -14,14 +14,6 @@ public class User {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public int getId() {

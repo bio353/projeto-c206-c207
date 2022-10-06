@@ -1,3 +1,4 @@
+package controller;
 import java.sql.*;
 
 public abstract class Database {
@@ -15,7 +16,7 @@ public abstract class Database {
     public void connect() {
         try {
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            System.out.println("Successfully connected to the database! Info: " + connection);
+            // System.out.println("Successfully connected to the database! Info: " + connection);
         } catch (SQLException error) {
             System.out.println("Connection Error: " + error.getMessage());
         }
