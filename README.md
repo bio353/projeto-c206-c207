@@ -30,7 +30,7 @@ Atenção! Segue às orientações abaixo:
 3. Deverá explicar o código DDL de criação do Esquema do Banco de Dados dentro do MySQL Workbench.
 4. Deverá criar e explicar exemplos de comandos DML e DQL sendo executados dentro deste esquema de Banco de Dados.
 
-## Orientações (Apenas POO)
+## Instruções de POO (Apenas)
 
 1. Terá de ser feito algum tipo de interface interativa com o usuário, seja via terminal (linha de comando) ou interface gráfica.
 2. Deverá usar ao menos dois conceitos vistos na Orientação a Objetos como, por exemplo, herança, implementação, encapsulamento etc.
