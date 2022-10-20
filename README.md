@@ -4,11 +4,11 @@
 
 Esta orientação é voltada a todos os alunos que cursam as disciplinas de `C206 - Programação Orientada a Objetos` e `C207 - Bancos de Dados I` e gostariam de fazer um mesmo projeto para ambas as disciplinas.
 
-## Orientações
+## Instruções
 
 Atenção! Segue às orientações abaixo:
 
-### Instruções Gerais
+### Orientações Gerais
 
 1. O trabalho poderá ser feito individualmente ou em dupla.
 2. Alunos poderão fazer o projeto com colegas de outras turmas, mas na apresentação deverá ficar explícita a contribuição de cada aluno no projeto.
@@ -16,21 +16,21 @@ Atenção! Segue às orientações abaixo:
 
 É aconselhável que o projeto seja feito na linguagem de programação `Java` e com o sistema gerenciador de banco de dados `MySQL`.
 
-### Instruções de POO e BD
+### Alunos de POO e BD
 
 1. Terá de ser feito algum tipo de interface interativa com o usuário, seja via terminal (linha de comando) ou interface gráfica.
 2. Deverá usar ao menos dois conceitos vistos na Orientação a Objetos como, por exemplo, herança, implementação, encapsulamento etc.
 3. Deverá conter pelo menos um relacionamento de cada tipo. Ou seja, um relacionamento 1 para 1, um relacionamento 1 para N e um relacionamento N para M.
 4. Deverá conter pelo menos um CRUD completo em uma das tabelas.
 
-## Instruções de BD (Apenas)
+### Apenas Alunos de BD
 
 1. Deverá conter pelo menos um relacionamento de cada tipo. Ou seja, um relacionamento 1 para 1, um relacionamento 1 para N e um relacionamento N para M.
 2. Deverá gerar e explicar, em detalhes, a modelagem do Banco de Dados.
 3. Deverá explicar o código DDL de criação do Esquema do Banco de Dados dentro do MySQL Workbench.
 4. Deverá criar e explicar exemplos de comandos DML e DQL sendo executados dentro deste esquema de Banco de Dados.
 
-## Instruções de POO (Apenas)
+### Apenas Alunos de POO
 
 1. Terá de ser feito algum tipo de interface interativa com o usuário, seja via terminal (linha de comando) ou interface gráfica.
 2. Deverá usar ao menos dois conceitos vistos na Orientação a Objetos como, por exemplo, herança, implementação, encapsulamento etc.
