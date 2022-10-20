@@ -9,7 +9,8 @@ Esta orientação é voltada a todos os alunos que cursam as disciplinas de `C20
 Atenção! Segue às orientações abaixo:
 
 1. O trabalho poderá ser feito individualmente ou em dupla.
-2. Caso ele seja feito em dupla, ambos os membros precisam ser das mesmas turmas.
+2. Caso ele seja feito em dupla, ambos os membros precisam ser das mesmas 
+s.
 3. O tema é livre.
 4. Terá de ser feito algum tipo de interface interativa com o usuário, seja via terminal (linha de comando) ou interface gráfica.
 5. Deverá usar ao menos dois conceitos vistos na Orientação a Objetos como, por exemplo, herança, implementação, encapsulamento etc.
@@ -23,7 +24,7 @@ Atenção! Segue às orientações abaixo:
 Atenção! Segue às orientações abaixo:
 
 1. O trabalho poderá ser feito individualmente ou em dupla.
-2. Caso ele seja feito em dupla, ambos os membros precisam ser das mesmas turmas.
+2. Alunos poderão fazer o projeto com colegas de outras turmas, mas na apresentação deverá ficar explícita a contribuição de cada aluno no projeto.
 3. O tema é livre.
 4. Deverá conter pelo menos um relacionamento de cada tipo. Ou seja, um relacionamento 1 para 1, um relacionamento 1 para N e um relacionamento N para M.
 5. Deverá gerar e explicar, em detalhes, a modelagem do Banco de Dados.
