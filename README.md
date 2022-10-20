@@ -55,4 +55,4 @@ ambos os vídeos.
 
 ## Prazo de Entrega 🏁
 
-Ainda a ser definido ...
+O trabalho poderá ser entregue até o dia **04 de Dezembro de 2022 (Domingo) às 23h59**. Atentem-se ao prazo, pois, de forma alguma, serão aceitos trabalhos após a data limite de entrega!
