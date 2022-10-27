@@ -39,9 +39,11 @@ public class CursoDB extends Database {
             while (result.next()) {
                 Curso curso = new Curso(result.getString("nome"));
                 curso.setId(result.getInt("id"));
-                System.out.println("id = " + result.getInt("id"));
-                System.out.println("nome = " + result.getString("nome"));
-                System.out.println("--------------------");
+                /*
+                 * System.out.println("id = " + result.getInt("id"));
+                 * System.out.println("nome = " + result.getString("nome"));
+                 * System.out.println("--------------------");
+                 */
                 cursos.add(curso);
             }
         } catch (SQLException error) {

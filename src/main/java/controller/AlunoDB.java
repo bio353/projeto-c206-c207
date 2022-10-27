@@ -40,10 +40,12 @@ public class AlunoDB extends Database {
             while (result.next()) {
                 Aluno aluno = new Aluno(result.getString("nome"), result.getInt("matricula"));
                 aluno.setId(result.getInt("id"));
-                System.out.println("id = " + result.getInt("id"));
-                System.out.println("nome = " + result.getString("nome"));
-                System.out.println("matricula = " + result.getString("matricula"));
-                System.out.println("--------------------");
+                /*
+                 * System.out.println("id = " + result.getInt("id"));
+                 * System.out.println("nome = " + result.getString("nome"));
+                 * System.out.println("matricula = " + result.getString("matricula"));
+                 * System.out.println("--------------------");
+                 */
                 alunos.add(aluno);
             }
         } catch (SQLException error) {
