@@ -17,7 +17,7 @@ CREATE TABLE Aluno (
 	fk_id_curso INT,
 	CONSTRAINT fk1
 		FOREIGN KEY (fk_id_curso)
-        REFERENCES Curso (id)
+        	REFERENCES Curso (id)
 		ON UPDATE CASCADE
-        ON DELETE CASCADE
+        	ON DELETE CASCADE
 );
